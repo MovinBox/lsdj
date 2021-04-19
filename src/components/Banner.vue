@@ -1,6 +1,6 @@
 <template>
     <div class="banner">
-        <img src="../assets/images/v2_qr51rj.png" alt="">
+        <img src="../assets/images/v2_qr51rj.jpg" alt="">
     </div>
 </template>
 
