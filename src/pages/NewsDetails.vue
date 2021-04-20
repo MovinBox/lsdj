@@ -124,7 +124,7 @@ export default {
 </style>
 
 <style>
-.newsDetails > div > p{
+.newsDetails > div > p,section{
     font-size: 20px!important;
     line-height: 2em;
 }
