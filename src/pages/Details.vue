@@ -1,58 +1,59 @@
 <template>
   <div class="body">
     <Title/>
-    <Banner/>
-    <div class="newsTitle">
-        <ul>
-            <li>
-                <span>主题名称：</span>
-                <p>{{ datas.name }}</p>
-            </li>
-            <li>
-                <span>会议类型：</span>
-                <p>{{ datas.meetingType_Text }}</p>
-            </li>
-            <li>
-                <span >开会时间：</span>
-                <p >{{ datas.beginTime }}</p>
-            </li>
-            <li>
-                <span>结束时间：</span>
-                <p>{{ datas.endTime }}</p>
-            </li>
-            <li>
-                <span>主题名称：</span>
-                <p>{{ datas.name }}</p>
-            </li>
-            <li>
-                <span>会议地址：</span>
-                <p>{{ datas.address }}</p>
-            </li>
-            <li>
-                <span>主持人：</span>
-                <p>{{ datas.master }}</p>
-            </li>
-            <li>
-                <span>联系电话：</span>
-                <p>{{ datas.phone }}</p>
-            </li>
-            <li>
-                <span>参会人员：</span>
-                <p>{{ datas.people }}</p>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="newsDetails">
-      内容：
-       <div v-html="datas.content" ></div>
+    <div>
+        <div class="newsTitle">
+            <ul>
+                <li>
+                    <span>主题名称：</span>
+                    <p>{{ datas.name }}</p>
+                </li>
+                <li>
+                    <span>会议类型：</span>
+                    <p>{{ datas.meetingType_Text }}</p>
+                </li>
+                <li>
+                    <span >开会时间：</span>
+                    <p >{{ datas.beginTime }}</p>
+                </li>
+                <li>
+                    <span>结束时间：</span>
+                    <p>{{ datas.endTime }}</p>
+                </li>
+                <li>
+                    <span>主题名称：</span>
+                    <p>{{ datas.name }}</p>
+                </li>
+                <li>
+                    <span>会议地址：</span>
+                    <p>{{ datas.address }}</p>
+                </li>
+                <li>
+                    <span>主持人：</span>
+                    <p>{{ datas.master }}</p>
+                </li>
+                <li>
+                    <span>联系电话：</span>
+                    <p>{{ datas.phone }}</p>
+                </li>
+                <li>
+                    <span>参会人员：</span>
+                    <p>{{ datas.people }}</p>
+                </li>
+            </ul>
+        </div>    
+        <div class="newsDetails">
+        内容：
+        <div v-html="datas.content" ></div>
+        </div>
+
     </div>
     <Bottom/>
   </div>
 </template>
 
 <script>
-  import api from '../utils/api.js'
+import api from '../utils/api.js'
 import Title from '../components/Title'
 import Banner from '../components/Banner'
 import Bottom from '../components/Bottom'
@@ -86,11 +87,11 @@ export default {
         Bottom
     },
     created() {
-      this.id = this.$route.query.id
-      this.type = this.$route.query.type
+        this.id = this.$route.query.id
+        this.type = this.$route.query.type
 
-      this.getData()
-    },
+        this.getData()
+    }, 
     methods: {
           getData() {
             if(this.type==1)

@@ -1,7 +1,6 @@
 <template>
   <div class="body">
     <Title/>
-    <Banner/>
     <div class="newsList">
         <div>
           <div>
@@ -81,9 +80,10 @@ export default {
         };
     },
     created() {
-      this.type = this.$route.query.type
-           //获取列表数据
-           this.getData()
+        this.type = this.$route.query.type
+        //获取列表数据
+        this.getData()
+        
     },
     methods: {
         handleSizeChange(val) {

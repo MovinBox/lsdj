@@ -1,6 +1,8 @@
 <template>
     <div class="title">
-        <img src="../assets/images/v2_qr4y1d.png" alt="">
+        <router-link tag="div" to="/">
+            <img src="../assets/images/v2_qr4y1d.png" alt="">
+        </router-link>
     </div>
 </template>
 
@@ -13,8 +15,11 @@
     background-position: bottom;
     background-size: 115%;
 }
-.title img{
+.title div{
     width: 261px;
     margin: 20px 0 0 63px;
+}
+.title div img{
+    width: 100%;
 }
 </style>
