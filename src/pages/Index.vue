@@ -329,6 +329,9 @@ export default {
     text-decoration: none;
     margin-left: 18px;
 }
+.activityList li dl dt p{
+    cursor: pointer;
+}
 .activityList li dl dd{
     width: 100%;
     height: 48px;
@@ -348,12 +351,11 @@ export default {
     word-break:keep-all;
     white-space:nowrap;
     text-overflow:ellipsis;
-
 }
 .activityList li dl dd img{
-        float: right;
-        width: 70px;
-        margin-top: 8px;
+    float: right;
+    width: 70px;
+    margin-top: 8px;
 }
 .pwidth{
     width: 100%!important;
