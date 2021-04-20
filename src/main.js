@@ -39,7 +39,13 @@ new Vue({
         path: '/List',
         component: List
       }
-    ]
+    ],
+    scrollBehavior (to, from, savedPosition) {
+      // return 期望滚动到哪个的位置
+      window.scrollTo(0,0);
+     }
   }),
-  template: '<App/>'
+  template: '<App/>',
+  
 }).$mount('#app')
+

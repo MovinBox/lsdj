@@ -54,7 +54,7 @@
 </template>
 
 <script>
-  import api from '../utils/api.js'
+import api from '../utils/api.js'
 import Title from '../components/Title'
 import Banner from '../components/Banner'
 import Bottom from '../components/Bottom'
